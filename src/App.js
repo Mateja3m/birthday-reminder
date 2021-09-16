@@ -6,9 +6,11 @@ function App() {
   const [people, setPeople] = useState(data);
   return (
     <main>
+      <h1>Birthday Reminder</h1>
       <section className="container">
-        <h4>{people.length} birthdays today</h4>
+        <h3>{people.length} birthdays today</h3>
         <List people={people} />
+
         <button type="button" onClick={() => setPeople([])}>
           clear all
         </button>
